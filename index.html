@@ -3,37 +3,55 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio - Bianca</title>
+    <title>Portfólio | Bianca</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Bianca</h1>
-        <p>Desenvolvedora Front-End Iniciante</p>
+    <header class="header">
+        <nav>
+            <h1 class="logo">Bianca</h1>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn">Tema</button>
+        </nav>
     </header>
 
-    <section id="sobre">
-        <h2>Sobre mim</h2>
-        <p>Olá! Sou Bianca, desenvolvedora iniciante focada em construir interfaces simples, organizadas e funcionais usando HTML, CSS e JavaScript.</p>
+    <section class="hero">
+        <h2 class="typing" id="typing"></h2>
+        <p>Desenvolvedora Front-End Iniciante</p>
+        <a href="#projetos" class="btn">Ver Projetos</a>
     </section>
 
-    <section id="projetos">
+    <section id="sobre" class="sobre fade-in">
+        <h2>Sobre mim</h2>
+        <p>Sou a Bianca, desenvolvedora iniciante focada em criar interfaces funcionais, modernas e responsivas. Estou sempre aprendendo novas tecnologias e aprimorando meus projetos.</p>
+    </section>
+
+    <section id="projetos" class="projetos fade-in">
         <h2>Projetos</h2>
-        <div class="projetos-container">
-            <a class="projeto-card" href="https://bianca-santoss.github.io/to-do-list/" target="_blank">
-                <h3>Lista de tarefas</h3>
+        <div class="cards">
+            <a href="https://bianca-santoss.github.io/to-do-list/" target="_blank" class="card">
+                <h3>Lista de Tarefas</h3>
                 <p>Aplicação simples para gerenciar tarefas.</p>
             </a>
-            <a class="projeto-card" href="https://bianca-santoss.github.io/relogio-digital/" target="_blank">
-                <h3>Relógio digital</h3>
-                <p>Relógio digital em tempo real feito com JavaScript.</p>
+
+            <a href="https://bianca-santoss.github.io/relogio-digital/" target="_blank" class="card">
+                <h3>Relógio Digital</h3>
+                <p>Relógio digital com estilo limpo e funcional.</p>
             </a>
         </div>
     </section>
 
-    <footer>
-        <p>© 2025 Bianca</p>
-    </footer>
+    <section id="contato" class="contato fade-in">
+        <h2>Contato</h2>
+        <p>Me adicione no GitHub:</p>
+        <a href="https://github.com/bianca-santoss" target="_blank" class="btn">Meu GitHub</a>
+    </section>
+
+    <button id="back-to-top">▲</button>
 
     <script src="script.js"></script>
 </body>
