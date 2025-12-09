@@ -1,40 +1,205 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio - Bianca</title>
-    <link rel="stylesheet" href="src/css/style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bianca — Portfólio</title>
+  <meta name="description" content="Portfólio pessoal — Bianca. Projetos, habilidades e contato." />
+  <link rel="stylesheet" href="src/css/style.css" />
 </head>
 <body>
-    <header>
-        <h1>Bianca</h1>
-        <p>Desenvolvedora Front-End Iniciante</p>
-    </header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Bianca<span class="dot">.</span></a>
 
-    <section id="sobre">
-        <h2>Sobre mim</h2>
-        <p>Olá! Sou Bianca, desenvolvedora iniciante focada em construir interfaces simples, organizadas e funcionais usando HTML, CSS e JavaScript.</p>
-    </section>
+      <nav class="nav" id="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
 
-    <section id="projetos">
-        <h2>Projetos</h2>
-        <div class="projetos-container">
-            <a class="projeto-card" href="https://bianca-santoss.github.io/to-do-list/" target="_blank">
-                <h3>Lista de tarefas</h3>
-                <p>Aplicação simples para gerenciar tarefas.</p>
-            </a>
-            <a class="projeto-card" href="https://bianca-santoss.github.io/relogio-digital/" target="_blank">
-                <h3>Relógio digital</h3>
-                <p>Relógio digital em tempo real feito com JavaScript.</p>
-            </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content" data-reveal>
+          <h1>Oi — eu sou a Bianca</h1>
+          <p class="lead">Desenvolvedora Front-End iniciante | Crio interfaces modernas, responsivas e acessíveis.</p>
+          <p class="cta-row">
+            <a class="btn primary" href="#projetos">Ver projetos</a>
+            <a class="btn ghost" href="#contato">Entrar em contato</a>
+          </p>
         </div>
+
+        <div class="hero-card" data-reveal>
+          <!-- cartão visual com foto simulada; substitua pela sua imagem em src/assets/fotos -->
+          <div class="avatar-wrap" aria-hidden="true">
+            <svg class="avatar" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="g" x1="0" x2="1">
+                  <stop offset="0" stop-color="#9be7ff"/>
+                  <stop offset="1" stop-color="#8ec5ff"/>
+                </linearGradient>
+              </defs>
+              <rect width="100%" height="100%" rx="20" fill="url(#g)"/>
+              <g transform="translate(30,30)" fill="#fff">
+                <circle cx="70" cy="50" r="30" opacity="0.95"/>
+                <rect x="0" y="110" width="140" height="20" rx="8"/>
+                <rect x="10" y="80" width="120" height="18" rx="8" opacity="0.9"/>
+              </g>
+            </svg>
+          </div>
+          <div class="hero-meta">
+            <h3>Front-End Developer</h3>
+            <p>HTML • CSS • JavaScript</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>© 2025 Bianca</p>
-    </footer>
+    <!-- SOBRE -->
+    <section id="sobre" class="section about">
+      <div class="container" data-reveal>
+        <h2>Sobre</h2>
+        <p>Sou estudante de desenvolvimento front-end com foco em interfaces limpas, acessíveis e responsivas. Tenho experiência com projetos pessoais que demonstram atenção ao design e à usabilidade.</p>
+      </div>
+    </section>
 
-    <script src="src/js/script.js"></script>
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="section skills">
+      <div class="container">
+        <h2 data-reveal>Habilidades</h2>
+
+        <div class="skills-grid">
+          <div class="skill-card" data-reveal>
+            <h3>HTML &amp; CSS</h3>
+            <p>Marcação semântica, layouts responsivos, Flexbox, Grid e boas práticas de acessibilidade.</p>
+            <div class="skill-bar"><span style="width:90%"></span></div>
+          </div>
+
+          <div class="skill-card" data-reveal>
+            <h3>JavaScript</h3>
+            <p>Vanilla JS, manipulação DOM, fetch, ES6+ e lógica prática para UI.</p>
+            <div class="skill-bar"><span style="width:80%"></span></div>
+          </div>
+
+          <div class="skill-card" data-reveal>
+            <h3>Ferramentas</h3>
+            <p>Git, GitHub, VSCode, deploy (Netlify / Vercel / GitHub Pages).</p>
+            <div class="skill-bar"><span style="width:75%"></span></div>
+          </div>
+
+          <div class="skill-card" data-reveal>
+            <h3>Design</h3>
+            <p>Prototipação, paletas modernas, tipografia e atenção ao espaçamento.</p>
+            <div class="skill-bar"><span style="width:70%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section projects">
+      <div class="container">
+        <h2 data-reveal>Projetos em destaque</h2>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card" data-reveal>
+            <div class="project-media">
+              <div class="project-thumb">Relógio digital</div>
+            </div>
+            <div class="project-body">
+              <h3>Relógio Digital</h3>
+              <p>Relógio com cronômetro, temporizador e modo claro/escuro. Feito com HTML, CSS e JS puro.</p>
+              <p class="project-actions">
+                <button class="btn small" data-project='{"title":"Relógio Digital","desc":"Relógio com cronômetro e timer, modo claro/escuro.","tech":"HTML, CSS, JS"}'>Detalhes</button>
+                <a class="link" href="#" aria-label="Ver código no GitHub (exemplo)">Ver código</a>
+              </p>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-reveal>
+            <div class="project-media">
+              <div class="project-thumb">Lista de tarefas</div>
+            </div>
+            <div class="project-body">
+              <h3>Lista de Tarefas (To-Do)</h3>
+              <p>Gerenciamento de tarefas com localStorage, filtros e interação fluida.</p>
+              <p class="project-actions">
+                <button class="btn small" data-project='{"title":"Lista de Tarefas","desc":"To-do com persistência no navegador e filtros.","tech":"HTML, CSS, JS"}'>Detalhes</button>
+                <a class="link" href="#" aria-label="Ver código no GitHub (exemplo)">Ver código</a>
+              </p>
+            </div>
+          </article>
+
+          <!-- Project 3 (placeholder for a new project) -->
+          <article class="project-card" data-reveal>
+            <div class="project-media">
+              <div class="project-thumb">Landing Page</div>
+            </div>
+            <div class="project-body">
+              <h3>Landing Page Profissional</h3>
+              <p>Uma landing page limpa e responsiva com boas práticas de conversão.</p>
+              <p class="project-actions">
+                <button class="btn small" data-project='{"title":"Landing Page","desc":"Landing Page promocional com CTA e formulário validado.","tech":"HTML, CSS, JS"}'>Detalhes</button>
+                <a class="link" href="#" aria-label="">Ver código</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section contact">
+      <div class="container" data-reveal>
+        <h2>Contato</h2>
+        <p>Quer conversar sobre uma vaga ou parceria? Me mande uma mensagem.</p>
+
+        <form id="contactForm" class="contact-form" action="#" method="post" novalidate>
+          <div class="form-row">
+            <input type="text" id="name" name="name" placeholder="Seu nome" required />
+            <input type="email" id="email" name="email" placeholder="Seu email" required />
+          </div>
+          <textarea id="message" name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Enviar mensagem</button>
+            <span class="form-note" id="formNote" aria-live="polite"></span>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Bianca — Desenvolvedora Front-End</small>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/bianca-do-couto-4282b6347?utm_source=share_via&utm_content=profile&utm_medium=member_android" aria-label="LinkedIn">LinkedIn</a>
+        <a href="https://GitHub.com/bianca-santoss" aria-label="GitHub">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal de projeto -->
+  <div id="projectModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-panel" role="document">
+      <button class="modal-close" id="modalClose" aria-label="Fechar">×</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <p><strong>Tecnologias:</strong> <span id="modalTech"></span></p>
+    </div>
+  </div>
+
+  <script src="src/js/script.js"></script>
 </body>
 </html>
