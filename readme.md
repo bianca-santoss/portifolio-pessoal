@@ -1,4 +1,4 @@
-# Portfólio • Bianca
+# Portfólio • Bruna
 
 Meu portfólio oficial como desenvolvedora **Front-End**.  
 Este repositório apresenta uma coletânea dos meus primeiros projetos, meu estilo de desenvolvimento e minha evolução contínua com foco em **HTML, CSS e JavaScript**.
@@ -36,13 +36,13 @@ Ele será atualizado conforme novos projetos forem criados.
 
 ### **Lista de Tarefas**
 Aplicação simples e eficiente para gerenciamento de tarefas, utilizando manipulação de DOM e armazenamento dinâmico.  
-🔗 https://bianca-santoss.github.io/to-do-list/
+🔗 https://bruna-santosas.github.io/to-do-list/
 
 ---
 
 ### **Relógio Digital**
 Relógio funcional em tempo real, estilizado com CSS e atualizado com JavaScript.  
-🔗 https://bianca-santoss.github.io/relogio-digital/
+🔗 https://bruna-santosss.github.io/relogio-digital/
 
 ---
 
